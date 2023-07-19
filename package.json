@@ -1,0 +1,24 @@
+{
+  "name": "threejs_hider_experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "browser-sync start --server \".\" --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yu-smc/threejs_hider_experiment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yu-smc/threejs_hider_experiment/issues"
+  },
+  "homepage": "https://github.com/yu-smc/threejs_hider_experiment#readme",
+  "devDependencies": {
+    "browser-sync": "^2.29.3"
+  }
+}
