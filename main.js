@@ -28,7 +28,7 @@ const skyMaterial = new THREE.MeshBasicMaterial({
 const skyGeometry = new THREE.SphereGeometry(100, 32, 32);
 const sky = new THREE.Mesh(skyGeometry, skyMaterial);
 // NOTE: 編集画面の一部で -1 を使っているので一律で -2 にする
-// sky.renderOrder = -2;
+sky.renderOrder = -2;
 scene.add(sky);
 
 // ジオメトリの作成
@@ -47,7 +47,10 @@ scene.add(cube);
 const hiderGeometry = new THREE.BoxGeometry(1, 1, 1);
 
 // マテリアルの作成
-const hiderMaterial = new THREE.MeshBasicMaterial({ color: 0x0000ff, colorWrite: false });
+const hiderMaterial = new THREE.MeshBasicMaterial({
+  color: 0x0000ff,
+  colorWrite: false,
+});
 
 // メッシュの作成
 const hiderMesh = new THREE.Mesh(hiderGeometry, hiderMaterial);
